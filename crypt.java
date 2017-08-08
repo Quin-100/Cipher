@@ -8,8 +8,8 @@ public class crypt{
 			BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 			Scanner sc = new Scanner(System.in);
 			int ch1,ch2,k;
-			String PT,CT;
-      restart:
+			String PT,CT,cho="";
+			do	{
 			System.out.printf("\t\n:: Study of cryptography ::\n");
       System.out.printf("\nSelect from below : \n");
 			System.out.printf("\n1.Additive Cipher.");
@@ -104,12 +104,11 @@ public class crypt{
   							   }
   							   break;
             }
+						System.out.printf("\n\nDo you want to continue (y/n): ");
+		        cho = br.readLine();
+					}
 
-        //System.out.printf("\n\nDo you want to continue (y/n): ");
-        //String c = br.readLine();
-        //if(c.equals("y"))
-
-			}
+			}while(cho.equals("y"));
 
 		}catch(Exception e){
 
